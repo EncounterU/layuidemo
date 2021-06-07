@@ -16,7 +16,7 @@ class LayuidemoApplicationTests {
 
     @Test
     public void getUserTest(){
-        List<User> userInfo = userService.getUserInfo("15760467978");
+        User userInfo = userService.getUserInfo("15760467978");
         System.out.println(userInfo);
     }
 

@@ -15,10 +15,10 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public List<User> getUserInfo(String phone) {
+    public User getUserInfo(String phone) {
         QueryWrapper<User> queryWrapper=new QueryWrapper<>();
         queryWrapper.eq("phone",phone);
-        List<User> user=userMapper.selectList(queryWrapper);
+        User user=userMapper.selectOne(queryWrapper);
         return user;
     }
 

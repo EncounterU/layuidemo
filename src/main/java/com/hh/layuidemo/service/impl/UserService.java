@@ -7,6 +7,6 @@ import java.util.List;
 
 @Service
 public interface UserService {
-     public List<User> getUserInfo(String phone);
+     public User getUserInfo(String phone);
      public int isUser(String phone);
 }
